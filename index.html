@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maulidta Yuwanda Fronika — Portofolio</title>
+
+<!-- Font: Cormorant Garamond untuk kesan formal-elegan, Jost untuk teks isi -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="mldta.css" />
+</head>
+<body>
+
+<!-- ================= INTRO / EFEK TRANSISI BOM ================= -->
+<div class="intro-overlay" id="introOverlay" aria-hidden="true">
+  <span class="bomb-whiteout" id="bombWhiteout"></span>
+  <div class="bomb-wrap">
+    <span class="bomb-core"></span>
+    <div class="bomb-burst" id="bombBurst">
+      <span class="bomb-shockwave bomb-shockwave--1"></span>
+      <span class="bomb-shockwave bomb-shockwave--2"></span>
+      <span class="bomb-flash"></span>
+    </div>
+    <div class="bomb-smoke-layer" id="bombSmokeLayer"></div>
+  </div>
+</div>
+<noscript>
+  <style>.intro-overlay{display:none !important;} .hero-intro{opacity:1 !important; transform:none !important;}</style>
+</noscript>
+
+<!-- Bingkai tepi kiri & kanan bermotif megamendung (dekoratif) -->
+<div class="site-frame site-frame-left" aria-hidden="true"></div>
+<div class="site-frame site-frame-right" aria-hidden="true"></div>
+
+<!-- Pola garis kotak-kotak menyala di latar belakang -->
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- Lapisan hujan glitter & bintang (diisi otomatis lewat script.js) -->
+<div class="glitter-layer" id="glitterLayer" aria-hidden="true"></div>
+
+<!-- ================= NAVIGASI ================= -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand">M.Y.F</span>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#biodata">Biodata</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="#pendidikan">Pendidikan</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#hobi">Hobi</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= 1 & 2 & 3. HERO / BERANDA ================= -->
+<header class="hero" id="beranda">
+  <div class="hero-glow-bg" aria-hidden="true"></div>
+  <div class="hero-content hero-intro">
+    <p class="hero-eyebrow">Portofolio Pribadi</p>
+    <h1 class="hero-name">Maulidta Yuwanda<br />Fronika</h1>
+    <div class="hero-divider" aria-hidden="true">
+      <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 10 C 40 -5, 60 25, 100 10 C 140 -5, 160 25, 200 10" stroke="currentColor" stroke-width="1.4" fill="none"/>
+      </svg>
+    </div>
+    <p class="hero-quote">
+      "Yakin pada tujuanmu, itulah masa depanmu. Lelah boleh, tetapi jangan pernah menjadikan lelahmu itu keputusan terakhir atau <em>end game</em>."
+    </p>
+    <p class="hero-faith">99% Faith <span class="faith-divider">·</span> 1% Chance</p>
+  </div>
+  <a href="#biodata" class="scroll-cue" aria-label="Gulir ke bawah">
+    <span></span>
+  </a>
+</header>
+
+<main>
+
+  <!-- ================= 4. BIODATA ================= -->
+  <section class="section" id="biodata">
+    <p class="section-eyebrow reveal">Profil Diri</p>
+    <h2 class="section-title reveal">Biodata</h2>
+
+    <div class="biodata-card reveal">
+      <div class="biodata-photo">
+        <!-- TEMPAT FOTO PROFIL: ganti src di bawah ini dengan foto Anda -->
+        <img src="formal.jpeg" alt="Foto Profil Maulidta Yuwanda Fronika" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+        <span class="photo-placeholder-text">Foto Profil</span>
+      </div>
+      <dl class="biodata-list">
+        <div class="biodata-row">
+          <dt>Nama</dt>
+          <dd>Maulidta Yuwanda Fronika</dd>
+        </div>
+        <div class="biodata-row">
+          <dt>Tempat / Tanggal Lahir</dt>
+          <dd>Sidoarjo, 07 Maret 2009</dd>
+        </div>
+        <div class="biodata-row">
+          <dt>Jenis Kelamin</dt>
+          <dd>Perempuan</dd>
+        </div>
+        <div class="biodata-row">
+          <dt>Kewarganegaraan</dt>
+          <dd>Indonesia</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================= 5. TENTANG SAYA ================= -->
+  <section class="section alt-bg" id="tentang">
+    <p class="section-eyebrow reveal">Perkenalan</p>
+    <h2 class="section-title reveal">Tentang Saya</h2>
+    <div class="about-text reveal">
+      <p>
+        Saya seorang siswa yang tertarik pada <em>Digital Technology</em>, <em>Civil</em>, dan <em>Architecture</em>.
+        Saya terbiasa menggambar dan membuat konsep desain sederhana. Saya juga mampu mengoperasikan
+        <em>Excel</em>, <em>Word</em>, dan <em>Spreadsheet</em> untuk kebutuhan laporan, data, dan administrasi.
+      </p>
+      <p>
+        Saya juga mempelajari dasar <em>coding</em> serta proses kerja di bidang <em>Software Engineering</em>.
+        Saya memiliki kelebihan yaitu berpikir secara kritis, menggunakan logika, serta saya adalah seseorang
+        yang jujur dan saya tidak pernah menanamkan sifat kebohongan untuk diri saya maupun untuk orang lain.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= KEAHLIAN ================= -->
+  <section class="section" id="keahlian">
+    <p class="section-eyebrow reveal">Kemampuan</p>
+    <h2 class="section-title reveal">Keahlian</h2>
+
+    <div class="skill-grid">
+      <div class="skill-card reveal">
+        <span class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8.5 8-4 4 4 4M15.5 8l4 4-4 4M13 5l-2 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="skill-name">Coding</span>
+        <span class="skill-detail"><em>HTML</em>, <em>CSS</em>, <em>JS</em>, <em>MySQL</em></span>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 9.5h17M9.5 9.5v11" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 15h6" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span class="skill-name"><em>Excel</em></span>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 9h9M7.5 13h9M7.5 17h5.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </span>
+        <span class="skill-name"><em>Spreadsheet</em></span>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 3.5h9l4.5 4.5V20.5H6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M15 3.5V8h4.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8.5 12.5h7M8.5 15.5h7M8.5 18h4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </span>
+        <span class="skill-name"><em>Word</em></span>
+      </div>
+      <div class="skill-card reveal">
+        <span class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20l3.5-1 11-11-2.5-2.5-11 11L4 20Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M14 5.5 18.5 10" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span class="skill-name">Desain</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KONTAK / SOSIAL MEDIA ================= -->
+  <section class="section" id="kontak">
+    <p class="section-eyebrow reveal">Terhubung Dengan Saya</p>
+    <h2 class="section-title reveal">Kontak</h2>
+
+    <div class="social-wrap reveal">
+      <a class="social-card" href="https://instagram.com/wfrnika" target="_blank" rel="noopener noreferrer">
+        <span class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="12" cy="12" r="4.3" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="social-name">Instagram</span>
+        <span class="social-handle">@wfrnika</span>
+      </a>
+
+      <a class="social-card" href="https://www.tiktok.com/@frnikael?_r=1&_t=ZS-98GYCuflhLx" target="_blank" rel="noopener noreferrer">
+        <span class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6 3c.4 2.2 1.9 3.9 4.1 4.2v3.1c-1.5.1-2.9-.4-4.1-1.2v6.6c0 3.4-2.7 6-6 6-1.3 0-2.6-.4-3.6-1.3-1.7-1.4-2.4-3.7-1.8-5.8.7-2.4 3-4 5.5-3.8.3 0 .6.1.9.1v3.2c-.3-.1-.6-.2-.9-.2-1.2-.1-2.3.7-2.6 1.9-.3 1.2.3 2.5 1.4 3 1.2.6 2.7.2 3.4-1 .2-.4.4-.9.4-1.4V3h3.3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="social-name">TikTok</span>
+        <span class="social-handle">@frnikael</span>
+      </a>
+
+      <a class="social-card" href="mailto:maulidtayuwandafronika@gmail.com">
+        <span class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M3.5 6.5 12 13l8.5-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="social-name">Gmail</span>
+        <span class="social-handle">maulidtayuwandafronika@gmail.com</span>
+      </a>
+    </div>
+
+    <!-- ---------- FORM PESAN — dikirim langsung ke Gmail lewat aplikasi email pengunjung ---------- -->
+    <div class="contact-form-wrap reveal">
+      <p class="form-heading">Ingin mengirim pesan langsung?</p>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="senderName">Nama</label>
+          <input type="text" id="senderName" name="senderName" placeholder="Nama Anda" required />
+        </div>
+        <div class="form-group">
+          <label for="senderEmail">Akun Gmail Pengirim</label>
+          <input type="email" id="senderEmail" name="senderEmail" placeholder="nama@gmail.com" required />
+        </div>
+        <div class="form-group">
+          <label for="senderMessage">Pesan</label>
+          <textarea id="senderMessage" name="senderMessage" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Kirim Pesan</button>
+        <p class="form-note">Tombol ini akan membuka aplikasi email Anda dengan pesan yang sudah terisi otomatis, ditujukan ke <em>Gmail</em> Maulidta.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= 6. PENDIDIKAN ================= -->
+  <section class="section alt-bg" id="pendidikan">
+    <p class="section-eyebrow reveal">Riwayat</p>
+    <h2 class="section-title reveal">Pendidikan</h2>
+
+    <ol class="timeline">
+      <li class="timeline-item reveal">
+        <span class="timeline-year">2024 — Sekarang</span>
+        <span class="timeline-name">SMK Krian 1 Sidoarjo</span>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-year">2021 — 2024</span>
+        <span class="timeline-name">SMP Negeri 2 Krian</span>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-year">2015 — 2021</span>
+        <span class="timeline-name">SDN Watutulis 1</span>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-year">2014 — 2015</span>
+        <span class="timeline-name">TK Dharma Wanita Tropodo</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ================= 7. PENGALAMAN & PRESTASI ================= -->
+  <section class="section" id="pengalaman">
+    <p class="section-eyebrow reveal">Rekam Jejak</p>
+    <h2 class="section-title reveal">Pengalaman &amp; Prestasi</h2>
+
+    <h3 class="subgroup-title reveal">Pengalaman</h3>
+    <div class="proof-grid">
+
+      <!-- CONTOH KARTU PENGALAMAN — salin blok <div class="proof-card"> ini untuk menambah item baru -->
+      <div class="proof-card reveal">
+        <!-- TEMPAT FOTO BUKTI: ganti src di bawah dengan foto bukti kegiatan -->
+        <div class="proof-photo">
+          <img src="gambargsmb.jpeg" alt="Bukti kegiatan GSMB" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Mengikuti GSMB (Gerakan Sekolah Menulis Buku), 2021</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="waketupmr.jpeg" alt="Bukti sebagai wakil ketua PMR" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Wakil Ketua PMR Madya SMPN 2 Krian, 2022/2023</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="lombacerpen.jpeg" alt="Bukti lomba cerpen" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Mengikuti lomba cerpen tingkat Kabupaten Sidoarjo</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="lombainter.jpeg" alt="Bukti kompetisi internasional" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Kompetisi internasional inovasi mahasiswa bersama Vietnam dan Kamboja, 2025</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="pkl.jpeg" alt="Bukti Praktik Kerja Lapangan" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Praktik Kerja Lapangan di <em>CV. Elva Jaya Teknik</em></p>
+      </div>
+    </div>
+
+    <h3 class="subgroup-title reveal">Prestasi</h3>
+    <div class="proof-grid">
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="juara2duta.jpeg" alt="Bukti juara 2 duta literasi" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Juara 2 Duta Literasi Sekolah, Festival Literasi Sidoarjo 2022</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="piagampenulis.jpeg" alt="Bukti piagam penghargaan penulis Nasional" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Piagam Penghargaan Penulis Nasional 2022</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="serfitikatwebinar.jpeg" alt="Sertifikat webinar Nyalaakademi" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Sertifikat Webinar Nyalaakademi, 2021</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="sertifikatpenulis.jpeg" alt="Sertifikat Penulis Nyalaakademi" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Sertifikat Penulis Nyalaakademi, 2022</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="juara2attartil.jpeg" alt="Bukti peringkat At-Tartil" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Peringkat 2 At-Tartil, Januari–Juni 2021</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="piagamorientasi.jpeg" alt="Piagam penghargaan Orientasi Kepalangmerahan" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Piagam Penghargaan Kegiatan Orientasi Kepalangmerahan, 24 November 2021</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="juara3ratu.jpeg" alt="Bukti juara 3 ratu luwes" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Juara 3 Ratu Luwes, 2016</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="sertifikatkorea.jpeg" alt="Sertifikat kursus bahasa Korea" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Sertifikat Kursus Bahasa Korea, 2024/2025</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="juara1pos.jpeg" alt="Bukti juara 1 menulis surat untuk pahlawan" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Juara 1 Menulis Surat untuk Pahlawan, 10 November 2025 bersama POSIND</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="sertifikatinter.jpg" alt="Bukti juara 3 Recycled Products Presentation" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Juara 3 of <em>Recycled Products Presentation</em>, 2025</p>
+      </div>
+
+      <div class="proof-card reveal">
+        <div class="proof-photo">
+          <img src="khat.jpeg" alt="Bukti juara lomba Khot Al-Qur'an" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Foto Bukti</span>
+        </div>
+        <p class="proof-desc">Juara 3 Lomba Khot Al-Qur'an PI FKK TPQ Prambon, 2020</p>
+        <p class="proof-desc">note : ini hanyalah contoh foto karena bukti foto hilang</p>
+      </div>
+      </div>
+      <!-- AKHIR CONTOH — tambahkan kartu baru dengan menyalin struktur .proof-card di atas -->
+    </div>
+  </section>
+
+  <!-- ================= 8. HOBI & MINAT ================= -->
+  <section class="section alt-bg" id="hobi">
+    <p class="section-eyebrow reveal">Di Luar Akademik</p>
+    <h2 class="section-title reveal">Hobi &amp; Minat</h2>
+
+    <div class="hobby-grid">
+      <div class="hobby-card reveal">
+        <span class="hobby-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20l3.5-1 11-11-2.5-2.5-11 11L4 20Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M14 5.5 18.5 10" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span class="hobby-name">Menggambar</span>
+      </div>
+      <div class="hobby-card reveal">
+        <span class="hobby-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 9h17M9 9v11.5" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span class="hobby-name">Mendesain</span>
+      </div>
+      <div class="hobby-card reveal">
+        <span class="hobby-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8.5 8-4 4 4 4M15.5 8l4 4-4 4M13 5l-2 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="hobby-name">Coding</span>
+      </div>
+      <div class="hobby-card reveal">
+        <span class="hobby-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 3.5c2.3 2.4 3.5 5.3 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.3-3.5-8.5s1.2-6.1 3.5-8.5ZM3.7 12h16.6" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span class="hobby-name">Teknologi Digital</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. PROYEK (TEMPLATE KOSONG) ================= -->
+  <section class="section" id="proyek">
+    <p class="section-eyebrow reveal">Karya</p>
+    <h2 class="section-title reveal">Proyek</h2>
+  
+
+    <div class="project-grid">
+
+      <!-- TEMPLATE KARTU PROYEK — salin blok ini untuk setiap proyek baru -->
+      <article class="project-card reveal">
+        <div class="project-media">
+          <!-- TEMPAT GAMBAR PROYEK: ganti src dengan gambar/thumbnail proyek -->
+          <img src="coverlombainter.jpeg" alt="Website Portofolio Pribadi" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Pratinjau Proyek</span>
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Project Recycled Product Presentation</h3>
+          <p class="project-desc"> <em>Student Innovation International Project Recycled Product Presentation</em> pada tahun 2025 bersama Vietnam dan Kamboja </p>
+          <!-- TEMPAT LINK PROYEK: ganti teks di dalam <span class="https://youtu.be/6fVTfo_S5B0?si=OOAH9s4y-Nhokeda"> dengan link <a href="https://youtu.be/6fVTfo_S5B0?si=OOAH9s4y-Nhokeda"> -->
+          <p class="project-link">Link: <a href="https://youtu.be/6fVTfo_S5B0?si=OOAH9s4y-Nhokeda" target="_blank" rel="noopener noreferrer">Klik link di sini</a></p>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-media">
+          <img src="webprtfl.png" alt="Website Portofolio Pribadi" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <span class="photo-placeholder-text">Pratinjau Proyek</span>
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Website Portofolio Pribadi</h3>
+          <p class="project-desc">Website portofolio pribadi ini sendiri — dibangun menggunakan <em>HTML</em>, <em>CSS</em>, dan <em>JavaScript</em> murni, menampilkan biodata, pendidikan, pengalaman, prestasi, hingga proyek.</p>
+          <!-- TEMPAT LINK PROYEK: ganti teks di dalam <span class="link-placeholder"> dengan link <a href="URL_GITHUB_ANDA"> setelah diunggah ke GitHub -->
+          <p class="project-link">GitHub: <a href="https://maulidtaaa.github.io/portofolio/" target="_blank" rel="noopener noreferrer">Klik link di sini</a></p>
+        </div>
+      </article>
+
+      <!-- AKHIR TEMPLATE -->
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Maulidta Yuwanda Fronika. Dibuat dengan sepenuh hati.</p>
+</footer>
+
+<script src="mldta.js"></script>
+</body>
+</html>
