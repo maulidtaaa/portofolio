@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#dff5fa" />
+    <meta
+      name="description"
+      content="Portfolio digital Maulidta Yuwanda Fronika. Rekam jejak, kemampuan, pengalaman, prestasi, dan project dalam konsep galaksi Bima Sakti."
+    />
+    <title>MYF // Galaxy Portfolio V5.2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mldta.css" />
+  </head>
+  <body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader-noise"></div>
+      <div class="preloader-nebula n1"></div>
+      <div class="preloader-nebula n2"></div>
+      <div class="star-field" id="splashStars"></div>
+      <div class="splash-kicker">
+        <span></span> MYF / PERSONAL UNIVERSE <span></span>
+      </div>
+      <div class="splash-system">
+        <div class="splash-galaxy-ring ring-a"></div>
+        <div class="splash-galaxy-ring ring-b"></div>
+        <div class="splash-sun"><i></i><b></b></div>
+        <div class="splash-orbit o1"><b class="p p1"></b></div>
+        <div class="splash-orbit o2"><b class="p p2"></b></div>
+        <div class="splash-orbit o3"><b class="p p3"></b></div>
+        <div class="splash-orbit o4"><b class="p p4"></b></div>
+        <div class="splash-orbit o5"><b class="p p5"></b></div>
+        <div class="splash-orbit o6"><b class="p p6"></b></div>
+        <div class="splash-orbit o7"><b class="p p7"></b></div>
+        <div class="splash-orbit o8"><b class="p p8"></b></div>
+        <div class="splash-name" id="splashName">
+          <span>WELCOME TO MY UNIVERSE</span
+          ><strong>Maulidta Yuwanda Fronika</strong
+          ><small>REKAYASA PERANGKAT LUNAK · DIGITAL CREATIVE PORTFOLIO</small>
+        </div>
+      </div>
+      <div class="splash-brand">
+        <span>GALAXY PORTFOLIO</span><strong>MYF</strong
+        ><em>Exploring ideas · Building digital experiences</em>
+      </div>
+      <div class="splash-status">
+        <span>ORBITAL SYSTEM INITIALIZING</span><i><b></b></i
+        ><strong id="splashPercent">00%</strong>
+      </div>
+    </div>
+
+    <div class="cosmic-bg" aria-hidden="true">
+      <div class="milky-way"></div>
+      <div class="nebula nebula-a"></div>
+      <div class="nebula nebula-b"></div>
+      <div class="ambient-saturn"><span></span></div>
+    </div>
+    <div class="star-layer" id="starLayer" aria-hidden="true"></div>
+    <div class="cursor-orb" id="cursorOrb" aria-hidden="true"></div>
+
+    <header class="topbar" id="topbar">
+      <a class="brand" href="#home" aria-label="Kembali ke beranda"
+        ><span class="brand-mark">M</span
+        ><span><b>MYF</b><small>GALAXY PORTFOLIO</small></span></a
+      >
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Buka navigasi"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-dock" id="navDock">
+        <a class="active" href="#home">Home</a><a href="#profile">Profile</a
+        ><a href="#skills">Skills</a><a href="#journey">Education</a
+        ><a href="#experience">Experience</a><a href="#proof">Achievements</a
+        ><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+      <button
+        class="theme-button"
+        id="themeButton"
+        aria-label="Ubah mode visual"
+      >
+        ◐
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-v5" id="home">
+        <div class="hero-orbit-art" aria-hidden="true">
+          <div class="planet-core"></div>
+          <div class="hero-orbit-line l1"></div>
+          <div class="hero-orbit-line l2"></div>
+          <div class="hero-orbit-line l3"></div>
+          <span class="mini-planet mp1"></span
+          ><span class="mini-planet mp2"></span
+          ><span class="mini-planet mp3"></span>
+        </div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> PERSONAL DIGITAL UNIVERSE / 2026</p>
+          <h1>MAULIDTA<br /><span>YUWANDA</span><br />FRONIKA.</h1>
+          <p class="hero-lead">
+            Siswa Rekayasa Perangkat Lunak yang mengeksplorasi teknologi
+            digital, desain, logika, dan karya kreatif melalui pengalaman nyata.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects"
+              >Explore My Work <span>↗</span></a
+            ><a class="text-btn" href="#profile"
+              >Discover profile <span>↓</span></a
+            >
+          </div>
+          <div class="hero-meta">
+            <span><b>RPL</b> Focus</span><span><b>HTML</b> · CSS · JS</span
+            ><span><b>MySQL</b> Database</span>
+          </div>
+        </div>
+        <div class="hero-panel reveal">
+          <div class="panel-top"><span>FOTO FORMAL</span><i>● LIVE</i></div>
+          <div class="portrait-frame">
+            <img src="formal.jpeg" alt="Foto formal Maulidta Yuwanda Fronika" />
+            <div class="scanline"></div>
+            <span class="frame-tag">IDENTITY // MYF</span>
+          </div>
+          <div class="hero-panel-bottom">
+            <div><small>CURRENT ROLE</small><strong>Student · RPL</strong></div>
+            <div><small>BASE</small><strong>Sidoarjo, ID</strong></div>
+          </div>
+        </div>
+        <a class="scroll-indicator" href="#profile"
+          ><span>SCROLL TO EXPLORE</span><i></i
+        ></a>
+      </section>
+
+      <section class="section-v5 profile-layout" id="profile">
+        <div class="section-heading reveal">
+          <span class="index">01</span>
+          <div>
+            <p class="eyebrow">IDENTITY MODULE</p>
+            <h2>Profil yang <em>berorientasi karya.</em></h2>
+          </div>
+        </div>
+        <div class="profile-grid">
+          <article class="manifesto-card reveal">
+            <span class="card-code">MYF / ABOUT</span>
+            <h3>Berpikir.<br />Belajar.<br /><em>Membangun.</em></h3>
+            <p>
+              Saya tertarik pada Digital Technology, Civil, dan Architecture.
+              Saya terbiasa menggambar, menyusun konsep desain, mengolah data,
+              serta mempelajari dasar coding dan Software Engineering.
+            </p>
+            <p>
+              Saya menikmati proses yang membutuhkan logika, ketelitian,
+              kreativitas, dan keberanian untuk mencoba pendekatan baru.
+            </p>
+            <div class="signature">MYF<span>portfolio identity</span></div>
+          </article>
+          <div class="identity-stack reveal">
+            <div class="identity-card">
+              <span>NAME</span><strong>Maulidta Yuwanda Fronika</strong>
+            </div>
+            <div class="identity-card">
+              <span>BIRTH</span><strong>Sidoarjo · 07 March 2009</strong>
+            </div>
+            <div class="identity-card">
+              <span>NATIONALITY</span><strong>Indonesia</strong>
+            </div>
+            <div class="identity-card">
+              <span>EDUCATION</span><strong>SMK Krian 1 Sidoarjo · RPL</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-v5 skills-zone" id="skills">
+        <div class="section-heading reveal">
+          <span class="index">02</span>
+          <div>
+            <p class="eyebrow">CAPABILITY CONSTELLATION</p>
+            <h2>Skill yang saling <em>terhubung.</em></h2>
+          </div>
+        </div>
+        <div class="skills-command">
+          <div class="skill-radar reveal">
+            <div class="radar-grid"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-center">MYF</div>
+            <span class="radar-dot d1">CODE</span
+            ><span class="radar-dot d2">DATA</span
+            ><span class="radar-dot d3">DESIGN</span
+            ><span class="radar-dot d4">OFFICE</span>
+          </div>
+          <div class="skill-list reveal">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Coding</h3>
+                <p>HTML · CSS · JavaScript · MySQL</p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Data & Office</h3>
+                <p>Excel · Spreadsheet · Word</p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Visual Design</h3>
+                <p>Drawing · Layout · Digital Design</p>
+              </div>
+              <b>↗</b>
+            </article>
+            <article>
+              <span>04</span>
+              <div>
+                <h3>Logical Thinking</h3>
+                <p>Problem solving · Critical thinking · Accuracy</p>
+              </div>
+              <b>↗</b>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-v5 journey-zone" id="journey">
+        <div class="section-heading reveal">
+          <span class="index">03</span>
+          <div>
+            <p class="eyebrow">EDUCATION TIMELINE</p>
+            <h2>Fondasi yang<br /><em>membentuk perjalanan.</em></h2>
+          </div>
+        </div>
+        <div class="timeline-v5 education-timeline">
+          <div class="timeline-line"></div>
+          <article class="mission-card reveal">
+            <span class="mission-year">2024 — NOW</span>
+            <div class="mission-node"></div>
+            <div>
+              <p class="mission-type">CURRENT EDUCATION</p>
+              <h3>SMK Krian 1 Sidoarjo</h3>
+              <p>
+                Rekayasa Perangkat Lunak. Memperdalam coding, database, desain,
+                dan pengembangan project digital.
+              </p>
+            </div>
+          </article>
+          <article class="mission-card reveal">
+            <span class="mission-year">2021 — 2024</span>
+            <div class="mission-node"></div>
+            <div>
+              <p class="mission-type">PREVIOUS EDUCATION</p>
+              <h3>SMP Negeri 2 Krian</h3>
+              <p>
+                Membangun pengalaman organisasi, literasi, dan aktivitas kreatif
+                sejak jenjang SMP.
+              </p>
+            </div>
+          </article>
+          <article class="mission-card reveal">
+            <span class="mission-year">2015 — 2021</span>
+            <div class="mission-node"></div>
+            <div>
+              <p class="mission-type">ELEMENTARY EDUCATION</p>
+              <h3>SDN Watutulis 1</h3>
+              <p>
+                Menjadi fondasi awal perjalanan pendidikan sebelum melanjutkan
+                ke jenjang SMP.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-v5 experience-zone" id="experience">
+        <div class="section-heading reveal">
+          <span class="index">04</span>
+          <div>
+            <p class="eyebrow">EXPERIENCE ARCHIVE</p>
+            <h2>Pengalaman yang<br /><em>membentuk kemampuan.</em></h2>
+          </div>
+        </div>
+        <div class="record-intro reveal">
+          <div>
+            <span class="card-code">DOCUMENTED EXPERIENCE</span>
+            <p>
+              Pengalaman ditampilkan bersama dokumentasi aslinya agar setiap
+              perjalanan tetap memiliki konteks visual yang jelas.
+            </p>
+          </div>
+          <span class="record-count">05 RECORDS</span>
+        </div>
+        <div class="experience-photo-grid">
+          <button class="experience-photo-card reveal" data-gallery-index="0">
+            <div class="experience-photo">
+              <img src="gambargsmb.jpeg" alt="Dokumentasi GSMB" />
+            </div>
+            <div class="experience-photo-body">
+              <span>EXP / 01 · ORGANIZATION</span>
+              <h3>GSMB</h3>
+              <p>Mengikuti Gerakan Sekolah Menulis Buku, 2021.</p>
+            </div>
+          </button>
+          <button class="experience-photo-card reveal" data-gallery-index="1">
+            <div class="experience-photo">
+              <img
+                src="waketupmr.jpeg"
+                alt="Dokumentasi Wakil Ketua PMR Madya SMPN 2 Krian"
+              />
+            </div>
+            <div class="experience-photo-body">
+              <span>EXP / 02 · LEADERSHIP</span>
+              <h3>Wakil Ketua PMR</h3>
+              <p>Wakil Ketua PMR Madya SMPN 2 Krian, 2022/2023.</p>
+            </div>
+          </button>
+          <button class="experience-photo-card reveal" data-gallery-index="2">
+            <div class="experience-photo">
+              <img src="lombacerpen.jpeg" alt="Dokumentasi lomba cerpen" />
+            </div>
+            <div class="experience-photo-body">
+              <span>EXP / 03 · COMPETITION</span>
+              <h3>Lomba Cerpen</h3>
+              <p>Mengikuti lomba cerpen tingkat Kabupaten Sidoarjo.</p>
+            </div>
+          </button>
+          <button class="experience-photo-card reveal" data-gallery-index="3">
+            <div class="experience-photo">
+              <img
+                src="lombainter.jpeg"
+                alt="Dokumentasi kompetisi internasional"
+              />
+            </div>
+            <div class="experience-photo-body">
+              <span>EXP / 04 · INTERNATIONAL</span>
+              <h3>Kompetisi Internasional</h3>
+              <p>
+                Kompetisi inovasi bersama peserta dari Vietnam dan Kamboja,
+                2025.
+              </p>
+            </div>
+          </button>
+          <button class="experience-photo-card reveal" data-gallery-index="4">
+            <div class="experience-photo">
+              <img src="pkl.jpeg" alt="Dokumentasi Praktik Kerja Lapangan" />
+            </div>
+            <div class="experience-photo-body">
+              <span>EXP / 05 · FIELD EXPERIENCE</span>
+              <h3>Praktik Kerja Lapangan</h3>
+              <p>
+                PKL di <em>CV. Elva Jaya Teknik</em> dan penerapan kemampuan di
+                dunia kerja.
+              </p>
+            </div>
+          </button>
+          <article class="experience-photo-card editable-record reveal">
+            <div class="editable-record-inner">
+              <span>EXP / 06</span><b>+</b>
+              <h3>Pengalaman berikutnya</h3>
+              <p>
+                Salin kartu ini jika ingin menambahkan dokumentasi pengalaman
+                baru.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-v5 proof-zone" id="proof">
+        <div class="section-heading reveal">
+          <span class="index">05</span>
+          <div>
+            <p class="eyebrow">ACHIEVEMENT ARCHIVE</p>
+            <h2>
+              Prestasi &amp; sertifikat<br /><em
+                >tersusun dalam satu galeri.</em
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="record-intro reveal">
+          <div>
+            <span class="card-code">VISUAL EVIDENCE</span>
+            <p>
+              Setiap prestasi tetap menggunakan gambar asli dari portfolio awal.
+              Klik kartu untuk membuka foto penuh dan berpindah ke dokumentasi
+              berikutnya.
+            </p>
+          </div>
+          <button class="archive-button" data-open-gallery="5">
+            Open full gallery <span>↗</span>
+          </button>
+        </div>
+        <div class="achievement-photo-grid">
+          <button class="achievement-photo-card reveal" data-gallery-index="5">
+            <div class="achievement-photo">
+              <img src="juara2duta.jpeg" alt="Juara 2 Duta Literasi Sekolah" />
+            </div>
+            <div>
+              <span>ACH / 01</span>
+              <h3>Juara 2 Duta Literasi Sekolah</h3>
+              <p>Festival Literasi Sidoarjo, 2022</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="6">
+            <div class="achievement-photo">
+              <img
+                src="piagampenulis.jpeg"
+                alt="Piagam Penghargaan Penulis Nasional"
+              />
+            </div>
+            <div>
+              <span>ACH / 02</span>
+              <h3>Penulis Nasional</h3>
+              <p>Piagam penghargaan penulis, 2022</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="7">
+            <div class="achievement-photo">
+              <img
+                src="serfitikatwebinar.jpeg"
+                alt="Sertifikat Webinar Nyalaakademi"
+              />
+            </div>
+            <div>
+              <span>ACH / 03</span>
+              <h3>Sertifikat Webinar</h3>
+              <p>Nyalaakademi, 2021</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="8">
+            <div class="achievement-photo">
+              <img
+                src="sertifikatpenulis.jpeg"
+                alt="Sertifikat Penulis Nyalaakademi"
+              />
+            </div>
+            <div>
+              <span>ACH / 04</span>
+              <h3>Sertifikat Penulis</h3>
+              <p>Nyalaakademi, 2022</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="9">
+            <div class="achievement-photo">
+              <img src="juara2attartil.jpeg" alt="Peringkat 2 At-Tartil" />
+            </div>
+            <div>
+              <span>ACH / 05</span>
+              <h3>Peringkat 2 At-Tartil</h3>
+              <p>Januari–Juni 2021</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="10">
+            <div class="achievement-photo">
+              <img
+                src="piagamorientasi.jpeg"
+                alt="Piagam Orientasi Kepalangmerahan"
+              />
+            </div>
+            <div>
+              <span>ACH / 06</span>
+              <h3>Orientasi Kepalangmerahan</h3>
+              <p>24 November 2021</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="11">
+            <div class="achievement-photo">
+              <img src="juara3ratu.jpeg" alt="Juara 3 Ratu Luwes" />
+            </div>
+            <div>
+              <span>ACH / 07</span>
+              <h3>Juara 3 Ratu Luwes</h3>
+              <p>2016</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="12">
+            <div class="achievement-photo">
+              <img
+                src="sertifikatkorea.jpeg"
+                alt="Sertifikat Kursus Bahasa Korea"
+              />
+            </div>
+            <div>
+              <span>ACH / 08</span>
+              <h3>Kursus Bahasa Korea</h3>
+              <p>2024/2025</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="13">
+            <div class="achievement-photo">
+              <img
+                src="juara1pos.jpeg"
+                alt="Juara 1 Menulis Surat untuk Pahlawan"
+              />
+            </div>
+            <div>
+              <span>ACH / 09</span>
+              <h3>Juara 1 Menulis Surat</h3>
+              <p>Bersama POSIND, 10 November 2025</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="14">
+            <div class="achievement-photo">
+              <img
+                src="sertifikatinter.jpg"
+                alt="Juara 3 Recycled Products Presentation"
+              />
+            </div>
+            <div>
+              <span>ACH / 10</span>
+              <h3>Recycled Products Presentation</h3>
+              <p>Juara 3, 2025</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="15">
+            <div class="achievement-photo">
+              <img src="khat.jpeg" alt="Juara 3 Lomba Khot Al-Quran" />
+            </div>
+            <div>
+              <span>ACH / 11</span>
+              <h3>Lomba Khot Al-Qur'an</h3>
+              <p>Juara 3, 2020</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="16">
+            <div class="achievement-photo">
+              <img
+                src="sertifikatscoreiso.jpeg"
+                alt="International Science Olympiad 10th"
+              />
+            </div>
+            <div>
+              <span>ACH / 12</span>
+              <h3>International Science Olympiad 10th</h3>
+              <p>Score Table, 20 September 2026</p>
+            </div>
+          </button>
+          <button class="achievement-photo-card reveal" data-gallery-index="17">
+            <div class="achievement-photo">
+              <img
+                src="sertifikattopiso.jpeg"
+                alt="International Science Olympiad 10th"
+              />
+            </div>
+            <div>
+              <span>ACH / 13</span>
+              <h3>International Science Olympiad 10th</h3>
+              <p>Top 100 Highest Score, 20 September 2026</p>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-v5 projects-zone" id="projects">
+        <div class="section-heading reveal">
+          <span class="index">05</span>
+          <div>
+            <p class="eyebrow">CREATIVE LAB</p>
+            <h2>Project yang sedang<br /><em>mengisi orbit.</em></h2>
+          </div>
+        </div>
+        <div class="project-orbit-grid">
+          <article class="project-v5 featured reveal">
+            <div class="project-number">PROJECT 01</div>
+            <div class="project-thumb">
+              <img
+                src="coverlombainter.jpeg"
+                alt="Student Innovation International Project"
+              /><span>CASE STUDY</span>
+            </div>
+            <div class="project-body">
+              <p>INTERNATIONAL INNOVATION</p>
+              <h3>Recycled Product Presentation</h3>
+              <span>Vietnam · Cambodia · Indonesia · 2025</span
+              ><a
+                href="https://youtu.be/6fVTfo_S5B0?si=OOAH9s4y-Nhokeda"
+                target="_blank"
+                rel="noopener"
+                >Open project ↗</a
+              >
+            </div>
+          </article>
+          <article class="project-v5 reveal">
+            <div class="project-number">PROJECT 02</div>
+            <div class="project-thumb">
+              <img src="webprtfl.png" alt="Website Portofolio Pribadi" /><span
+                >LIVE WEBSITE</span
+              >
+            </div>
+            <div class="project-body">
+              <p>WEB DEVELOPMENT</p>
+              <h3>Personal Portfolio</h3>
+              <span>HTML · CSS · JavaScript</span
+              ><a
+                href="https://maulidtaaa.github.io/portofolio/"
+                target="_blank"
+                rel="noopener"
+                >Open project ↗</a
+              >
+            </div>
+          </article>
+          <article class="project-v5 editable reveal">
+            <div class="project-number">PROJECT 03</div>
+            <div class="project-thumb">
+              <img src="libventory.png" alt="Project tambahan 1" /><span
+                >LIVE WEBSITE</span
+              >
+            </div>
+            <div class="project-body">
+              <p>WEBSITE INVENTARIS</p>
+              <h3>Libventory</h3>
+              <span
+                >HTML · CSS · JavaScript · PWA · manifest.json · app.js ·
+                service-worker.js</span
+              ><a
+                href="https://maulidtaaa.github.io/libventory/"
+                target="_blank"
+                rel="noopener"
+                >Open project ↗</a
+              >
+            </div>
+          </article>
+          <article class="project-v5 editable reveal">
+            <div class="project-number">PROJECT 04</div>
+            <div class="project-thumb">
+              <img src="webprtfl.png" alt="Project tambahan 2" /><span
+                >EDIT THIS</span
+              >
+            </div>
+            <div class="project-body">
+              <p>GANTI KATEGORI</p>
+              <h3>Nama Project Anda</h3>
+              <span>Ganti teknologi · tahun · peran</span
+              ><a href="#" data-project-url="GANTI_URL_PROJECT_04"
+                >Isi link project ↗</a
+              >
+            </div>
+          </article>
+          <article class="project-v5 editable reveal">
+            <div class="project-number">PROJECT 05</div>
+            <div class="project-thumb">
+              <img src="webprtfl.png" alt="Project tambahan 3" /><span
+                >EDIT THIS</span
+              >
+            </div>
+            <div class="project-body">
+              <p>GANTI KATEGORI</p>
+              <h3>Nama Project Anda</h3>
+              <span>Ganti teknologi · tahun · peran</span
+              ><a href="#" data-project-url="GANTI_URL_PROJECT_05"
+                >Isi link project ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-v5 personal-zone" id="personal">
+        <div class="personal-card reveal">
+          <div>
+            <p class="eyebrow">06 / PERSONAL CONSTELLATION</p>
+            <h2>Di luar coding,<br /><em>saya tetap berkarya.</em></h2>
+          </div>
+          <div class="interest-pills">
+            <span>✦ Menggambar</span><span>✦ Mendesain</span
+            ><span>✦ Coding</span><span>✦ Teknologi Digital</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-v5 contact-zone" id="contact">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">09 / TRANSMISSION CHANNEL</p>
+          <h2>Let's create the<br /><em>next orbit.</em></h2>
+          <p>
+            Untuk kolaborasi, project, diskusi, atau sekadar menyapa, kirim
+            pesan melalui kanal berikut.
+          </p>
+          <div class="contact-links">
+            <a
+              href="https://instagram.com/wfrnika"
+              target="_blank"
+              rel="noopener"
+              ><span>IG</span>@wfrnika ↗</a
+            ><a
+              href="https://www.tiktok.com/@frnikael"
+              target="_blank"
+              rel="noopener"
+              ><span>TT</span>@frnikael ↗</a
+            ><a href="mailto:maulidtayuwandafronika@gmail.com"
+              ><span>GM</span>maulidtayuwandafronika@gmail.com ↗</a
+            >
+          </div>
+        </div>
+        <form class="contact-console reveal" id="contactForm" novalidate>
+          <div class="console-head">
+            <span>MESSAGE CONSOLE</span><i>● READY</i>
+          </div>
+          <label
+            >YOUR NAME<input
+              id="senderName"
+              required
+              placeholder="Nama Anda" /></label
+          ><label
+            >YOUR EMAIL<input
+              id="senderEmail"
+              type="email"
+              required
+              placeholder="nama@gmail.com" /></label
+          ><label
+            >MESSAGE<textarea
+              id="senderMessage"
+              rows="5"
+              required
+              placeholder="Tulis pesan Anda..."
+            ></textarea></label
+          ><button type="submit">TRANSMIT MESSAGE <span>↗</span></button
+          ><small
+            >Pesan akan membuka aplikasi email Anda dan ditujukan ke Gmail
+            Maulidta.</small
+          >
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer-v5">
+      <div><strong>MYF</strong><span>GALAXY PORTFOLIO V5</span></div>
+      <p>
+        © <span id="year"></span> Maulidta Yuwanda Fronika. Built with
+        curiosity.
+      </p>
+      <a href="#home">BACK TO ORBIT ↑</a>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button id="lightboxClose" aria-label="Tutup">×</button
+      ><button id="lightboxPrev" aria-label="Sebelumnya">‹</button>
+      <figure>
+        <img id="lightboxImage" src="" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button id="lightboxNext" aria-label="Berikutnya">›</button
+      ><span id="lightboxCounter"></span>
+    </div>
+    <script src="mldta.js"></script>
+  </body>
+</html>
